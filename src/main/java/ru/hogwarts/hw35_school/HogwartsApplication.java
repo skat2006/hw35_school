@@ -1,4 +1,4 @@
-package ru.hogwarts.school;
+package ru.hogwarts.hw35_school;
 
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @OpenAPIDefinition
-public class SchoolApplication {
+public class HogwartsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SchoolApplication.class, args);
+		SpringApplication.run(HogwartsApplication.class, args);
 	}
 
 }

@@ -1,10 +1,10 @@
-package ru.hogwarts.school.controller;
+package ru.hogwarts.hw35_school.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.hogwarts.school.model.Faculty;
-import ru.hogwarts.school.model.Student;
-import ru.hogwarts.school.service.StudentService;
+import ru.hogwarts.hw35_school.model.Faculty;
+import ru.hogwarts.hw35_school.model.Student;
+import ru.hogwarts.hw35_school.service.StudentService;
 
 import java.util.Collection;
 
@@ -61,4 +61,12 @@ public class StudentController {
     public Faculty facultyById(@PathVariable Long id) {
         return studentService.getFacultyById(id);
     }
+
+    @PatchMapping("/{id}/avatar")
+    public Student patchStudentAvatar(@PathVariable long id, @RequestParam("avatarId") Long avatarId) {
+
+        return studentService.patchStudentAvatar(id, avatarId);
+    }
+
+
 }

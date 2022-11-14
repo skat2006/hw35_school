@@ -1,0 +1,15 @@
+POST http://localhost:8080/avatar/2
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="avatar"; filename="avatar.jpg"
+Content-Type: image/jpeg
+
+< ./avatar.jpg
+--WebAppBoundary
+
+###
+GET http://localhost:8080/avatar/13/file
+
+###
+GET http://localhost:8080/avatar/14/db
