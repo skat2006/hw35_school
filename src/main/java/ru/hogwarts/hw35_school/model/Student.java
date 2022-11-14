@@ -1,4 +1,4 @@
-package ru.hogwarts.school.model;
+package ru.hogwarts.hw35_school.model;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -16,6 +16,8 @@ public class Student {
     @ManyToOne
     private Faculty faculty;
 
+    @OneToOne
+    private Avatar avatar;
     public Long getId() {
         return id;
     }
@@ -71,5 +73,17 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public void setFaculty(Faculty faculty) {
+        this.faculty = faculty;
+    }
+
+    public Avatar getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(Avatar avatar) {
+        this.avatar = avatar;
     }
 }

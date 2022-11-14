@@ -1,7 +1,7 @@
-package ru.hogwarts.school.repositories;
+package ru.hogwarts.hw35_school.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.hogwarts.school.model.Student;
+import ru.hogwarts.hw35_school.model.Student;
 
 import java.util.List;
 

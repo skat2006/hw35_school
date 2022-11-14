@@ -1,14 +1,13 @@
-package ru.hogwarts.school.service;
+package ru.hogwarts.hw35_school.service;
 
 import org.springframework.stereotype.Service;
-import ru.hogwarts.school.model.Faculty;
-import ru.hogwarts.school.model.Student;
-import ru.hogwarts.school.repositories.FacultyRepository;
+import ru.hogwarts.hw35_school.model.Faculty;
+import ru.hogwarts.hw35_school.model.Student;
+import ru.hogwarts.hw35_school.repositories.FacultyRepository;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
